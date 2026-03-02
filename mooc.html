@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOC Certifications - Khokamoni · Security Researcher</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <div class="profile-image-container">
+                    <img src="images/profile/khoka.jpeg" alt="Khokamoni" class="profile-image">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Khokamoni</span>
+                    <span class="brand-alias">Security Researcher</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-toggle__line menu-toggle__line--1"></span>
+                <span class="menu-toggle__line menu-toggle__line--2"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Research <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cves.html">CVEs</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Professional <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="affiliation.html">Affiliations</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Learning <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mooc.html" class="active">MOOC Certifications</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page">
+        <!-- Hero -->
+        <section class="hero glass" style="padding: 2.5rem 3rem;">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Online Learning
+                </div>
+                <h1 class="hero-name">MOOC<br><em>Certifications</em></h1>
+                <p class="hero-bio">
+                    A collection of online courses and certifications from leading platforms
+                    like Coursera, edX, and MathWorks, demonstrating continuous learning
+                    in security, programming, and systems.
+                </p>
+            </div>
+            <div class="hero-avatar-container">
+                <img src="images/profile/mooc-bio.jpg" alt="MOOC" class="hero-bio-image">
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <div class="stats-row" style="margin-top: 2rem;">
+            <div class="stat-card glass">
+                <div class="stat-val">15</div>
+                <div class="stat-lbl">Completed<br>Courses</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">6</div>
+                <div class="stat-lbl">Learning<br>Platforms</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">100%</div>
+                <div class="stat-lbl">Completion<br>Rate</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">200+</div>
+                <div class="stat-lbl">Hours of<br>Learning</div>
+            </div>
+        </div>
+
+        <!-- Featured Courses -->
+        <section style="margin-top: 3rem;">
+            <p class="sec-eye">Latest Certifications</p>
+            <h2 class="sec-title">Featured Courses</h2>
+            
+            <div class="panel glass" style="padding: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <!-- Harvard CS50 -->
+                    <div class="mooc-card" style="background: rgba(255,255,255,0.3); border-radius: var(--radius-md); overflow: hidden;">
+                        <div style="background: linear-gradient(145deg, #A51C30, #C41E3A); padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <span style="color: #A51C30; font-size: 1.8rem; font-weight: bold;">H</span>
+                            </div>
+                            <div>
+                                <span class="pub-type" style="background: rgba(255,255,255,0.2); color: white;">Harvard University</span>
+                                <p style="color: white; font-size: 0.8rem; margin-top: 0.2rem;">March 2026</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">CS50x: Introduction to Computer Science</h3>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                                <span class="chip" style="background: rgba(109,191,218,0.2);">100% Complete</span>
+                                <span class="chip">12 weeks</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--w-current); margin-bottom: 1rem;">Comprehensive introduction to computer science, covering algorithms, data structures, and web development.</p>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                <span class="chip">C</span>
+                                <span class="chip">Python</span>
+                                <span class="chip">SQL</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">HTML/CSS</span>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="#" class="btn btn-ghost" style="padding: 0.4rem 1rem;"><i class="fa-regular fa-file-pdf"></i> Certificate</a>
+                                <a href="#" class="btn btn-ghost" style="padding: 0.4rem 1rem;"><i class="fa-regular fa-eye"></i> Credentials</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stanford ML -->
+                    <div class="mooc-card" style="background: rgba(255,255,255,0.3); border-radius: var(--radius-md); overflow: hidden;">
+                        <div style="background: linear-gradient(145deg, #8C1515, #B83B3B); padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <span style="color: #8C1515; font-size: 1.8rem; font-weight: bold;">S</span>
+                            </div>
+                            <div>
+                                <span class="pub-type" style="background: rgba(255,255,255,0.2); color: white;">Stanford Online</span>
+                                <p style="color: white; font-size: 0.8rem; margin-top: 0.2rem;">January 2026</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Machine Learning Specialization</h3>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                                <span class="chip" style="background: rgba(109,191,218,0.2);">100% Complete</span>
+                                <span class="chip">3 courses</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--w-current); margin-bottom: 1rem;">Supervised learning, unsupervised learning, and best practices in machine learning (Andrew Ng).</p>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                <span class="chip">Python</span>
+                                <span class="chip">TensorFlow</span>
+                                <span class="chip">Neural Networks</span>
+                                <span class="chip">Linear Algebra</span>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="#" class="btn btn-ghost"><i class="fa-regular fa-file-pdf"></i> Certificate</a>
+                                <a href="#" class="btn btn-ghost"><i class="fa-regular fa-eye"></i> Credentials</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MIT Security -->
+                    <div class="mooc-card" style="background: rgba(255,255,255,0.3); border-radius: var(--radius-md); overflow: hidden;">
+                        <div style="background: linear-gradient(145deg, #750014, #A31F34); padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <span style="color: #750014; font-size: 1.8rem; font-weight: bold;">M</span>
+                            </div>
+                            <div>
+                                <span class="pub-type" style="background: rgba(255,255,255,0.2); color: white;">MIT xPRO</span>
+                                <p style="color: white; font-size: 0.8rem; margin-top: 0.2rem;">November 2025</p>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Cybersecurity: Defending Systems</h3>
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                                <span class="chip" style="background: rgba(109,191,218,0.2);">100% Complete</span>
+                                <span class="chip">8 weeks</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--w-current); margin-bottom: 1rem;">Advanced topics in network security, cryptography, and system hardening.</p>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                <span class="chip">Network Security</span>
+                                <span class="chip">Cryptography</span>
+                                <span class="chip">Penetration Testing</span>
+                                <span class="chip">SIEM</span>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="#" class="btn btn-ghost"><i class="fa-regular fa-file-pdf"></i> Certificate</a>
+                                <a href="#" class="btn btn-ghost"><i class="fa-regular fa-eye"></i> Credentials</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Certifications List -->
+        <section style="margin-top: 3rem;">
+            <div class="panel glass" style="padding: 2rem;">
+                <h2 class="sec-title">All Certifications</h2>
+                
+                <div style="display: grid; gap: 1rem;">
+                    <!-- Certification 1 -->
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.2); border-radius: var(--radius-md);">
+                        <div style="width: 50px; height: 50px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-shield" style="color: #0d5c76;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-weight: 600;">Ethical Hacking Essentials</h3>
+                            <p style="color: var(--w-teal);">EC-Council · December 2025</p>
+                        </div>
+                        <a href="#" class="btn btn-ghost" style="padding: 0.3rem 1rem;"><i class="fa-regular fa-file-pdf"></i></a>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.2); border-radius: var(--radius-md);">
+                        <div style="width: 50px; height: 50px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-brands fa-python" style="color: #306998;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-weight: 600;">Python for Cybersecurity</h3>
+                            <p style="color: var(--w-teal);">Coursera · November 2025</p>
+                        </div>
+                        <a href="#" class="btn btn-ghost" style="padding: 0.3rem 1rem;"><i class="fa-regular fa-file-pdf"></i></a>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.2); border-radius: var(--radius-md);">
+                        <div style="width: 50px; height: 50px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-brands fa-linux" style="color: #000;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-weight: 600;">Linux System Administration</h3>
+                            <p style="color: var(--w-teal);">Linux Foundation · October 2025</p>
+                        </div>
+                        <a href="#" class="btn btn-ghost" style="padding: 0.3rem 1rem;"><i class="fa-regular fa-file-pdf"></i></a>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.2); border-radius: var(--radius-md);">
+                        <div style="width: 50px; height: 50px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-cloud" style="color: #4285F4;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-weight: 600;">AWS Security Specialization</h3>
+                            <p style="color: var(--w-teal);">AWS Training · September 2025</p>
+                        </div>
+                        <a href="#" class="btn btn-ghost" style="padding: 0.3rem 1rem;"><i class="fa-regular fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Acquired -->
+        <section style="margin-top: 3rem;">
+            <div class="panel glass">
+                <p class="sec-eye">Skills Gained</p>
+                <h2 class="sec-title">Learning Outcomes</h2>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem;">
+                    <span class="tag">Python</span>
+                    <span class="tag">C/C++</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Cryptography</span>
+                    <span class="tag">Penetration Testing</span>
+                    <span class="tag">Ethical Hacking</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">AWS Security</span>
+                    <span class="tag">Linux Admin</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">SIEM</span>
+                    <span class="tag">Wireshark</span>
+                    <span class="tag">Metasploit</span>
+                    <span class="tag">Burp Suite</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><span class="pulse-dot"></span> Khokamoni · Security Researcher</p>
+        <p>© 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

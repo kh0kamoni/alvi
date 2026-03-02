@@ -1,0 +1,71 @@
+{
+  "publications": [
+    {
+      "title": "Analysis of Kernel Module Vulnerabilities in Modern Linux Distributions",
+      "authors": "Khokamoni, J. Smith, R. Johnson",
+      "journal": "Journal of Computer Security",
+      "year": 2024,
+      "type": "journal",
+      "volume": "32",
+      "issue": "4",
+      "pages": "451-478",
+      "doi": "10.3233/JCS-230145"
+    },
+    {
+      "title": "eBPF Security: A Deep Dive into Kernel Extension Vulnerabilities",
+      "authors": "Khokamoni, L. Zhang",
+      "journal": "Network and Distributed System Security Symposium (NDSS)",
+      "year": 2024,
+      "type": "conference",
+      "doi": "10.14722/ndss.2024.23145"
+    },
+    {
+      "title": "Automated Malware Classification Using Deep Learning on Behavioral Data",
+      "authors": "Khokamoni, A. Kumar",
+      "journal": "IEEE Symposium on Security and Privacy (Oakland)",
+      "year": 2023,
+      "type": "conference",
+      "doi": "10.1109/SP.2023.12345"
+    },
+    {
+      "title": "A Comprehensive Study of Web Application Firewall Evasion Techniques",
+      "authors": "Khokamoni, M. Chen, L. Rodriguez",
+      "journal": "ACM Transactions on Privacy and Security",
+      "year": 2023,
+      "type": "journal",
+      "volume": "26",
+      "issue": "3",
+      "pages": "18",
+      "doi": "10.1145/3589357"
+    },
+    {
+      "title": "Fuzzing Linux Kernel Drivers: A Systematic Approach",
+      "authors": "Khokamoni, S. Patel",
+      "journal": "Computers & Security",
+      "year": 2023,
+      "type": "journal",
+      "volume": "128",
+      "pages": "103145",
+      "doi": "10.1016/j.cose.2023.103145"
+    },
+    {
+      "title": "Kernel Memory Corruption Vulnerabilities: A 10-Year Retrospective",
+      "authors": "Khokamoni",
+      "journal": "USENIX Security Symposium",
+      "year": 2022,
+      "type": "conference",
+      "doi": "10.5555/3549876"
+    },
+    {
+      "title": "Novel Anti-Debugging Techniques in Modern Malware",
+      "authors": "Khokamoni, T. Williams",
+      "journal": "Journal in Computer Virology",
+      "year": 2022,
+      "type": "journal",
+      "volume": "18",
+      "issue": "2",
+      "pages": "89-104",
+      "doi": "10.1007/s11416-022-00421-8"
+    }
+  ]
+}

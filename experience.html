@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Khokamoni · Security Researcher</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar (same structure) -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <div class="profile-image-container">
+                    <img src="images/profile/khoka.jpeg" alt="Khokamoni" class="profile-image">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Khokamoni</span>
+                    <span class="brand-alias">Security Researcher</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-toggle__line menu-toggle__line--1"></span>
+                <span class="menu-toggle__line menu-toggle__line--2"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Research <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research Areas</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="cves.html">CVEs</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Professional <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="experience.html" class="active">Experience</a></li>
+                        <li><a href="affiliation.html">Affiliations</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle">
+                        Learning <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mooc.html">MOOC Certifications</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page">
+        <!-- Hero -->
+        <section class="hero glass" style="padding: 2.5rem 3rem;">
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Professional Journey
+                </div>
+                <h1 class="hero-name">Experience<br><em>& Education</em></h1>
+                <p class="hero-bio">
+                    Academic and professional journey in computer science and security research,
+                    from undergraduate studies to PhD research at Stanford.
+                </p>
+            </div>
+            <div class="hero-avatar-container">
+                <img src="images/profile/exp-bio.jpg" alt="Experience" class="hero-bio-image">
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section style="margin-top: 3rem;">
+            <div class="two-col">
+                <!-- Work Experience Column -->
+                <div>
+                    <p class="sec-eye">Professional</p>
+                    <h2 class="sec-title">Work Experience</h2>
+                    <div class="panel glass">
+                        <ul class="timeline">
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">Security Researcher (PhD)</p>
+                                    <p class="tl-org">Stanford University</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current); margin-top: 0.3rem;">Research on kernel security, malware analysis, and vulnerability discovery.</p>
+                                </div>
+                                <span class="tl-date">2024 – Now</span>
+                            </li>
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">Adjunct Faculty (Lecturer)</p>
+                                    <p class="tl-org">BUET · Dept. of CSE</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current); margin-top: 0.3rem;">Taught undergraduate courses in operating systems and network security.</p>
+                                </div>
+                                <span class="tl-date">2021 – 2023</span>
+                            </li>
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">Security Engineer Intern</p>
+                                    <p class="tl-org">Google · Project Zero</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current); margin-top: 0.3rem;">Discovered 3 critical vulnerabilities in Chrome and Android.</p>
+                                </div>
+                                <span class="tl-date">Summer 2022</span>
+                            </li>
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">Research Assistant</p>
+                                    <p class="tl-org">BUET Security Lab</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current); margin-top: 0.3rem;">Developed automated vulnerability detection tools.</p>
+                                </div>
+                                <span class="tl-date">2020 – 2021</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div>
+                    <p class="sec-eye">Academic</p>
+                    <h2 class="sec-title">Education</h2>
+                    <div class="panel glass">
+                        <ul class="timeline">
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">PhD in Computer Science</p>
+                                    <p class="tl-org">Stanford University</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current);">Focus: Computer Security, Vulnerability Research</p>
+                                </div>
+                                <span class="tl-date">2024 – Now</span>
+                            </li>
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">M.Sc. in Computer Science</p>
+                                    <p class="tl-org">Stanford University</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current);">Thesis: "Automated Kernel Vulnerability Discovery"</p>
+                                </div>
+                                <span class="tl-date">2022 – 2024</span>
+                            </li>
+                            <li class="tl-row">
+                                <div class="tl-marker"></div>
+                                <div class="tl-body">
+                                    <p class="tl-role">B.Sc. in Computer Science</p>
+                                    <p class="tl-org">BUET</p>
+                                    <p style="font-size: 0.8rem; color: var(--w-current);">CGPA: 3.97/4.00 · Class Rank: 2nd/150</p>
+                                </div>
+                                <span class="tl-date">2018 – 2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tools -->
+        <section style="margin-top: 2rem;">
+            <div class="panel glass">
+                <p class="sec-eye">Expertise</p>
+                <h2 class="sec-title">Skills & Tools</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p class="sec-eye" style="margin-bottom: 0.5rem;">Programming Languages</p>
+                    <div class="chips">
+                        <span class="chip">C/C++</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">Assembly (x86/ARM)</span>
+                        <span class="chip">Rust</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Bash</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p class="sec-eye" style="margin-bottom: 0.5rem;">Reverse Engineering</p>
+                    <div class="chips">
+                        <span class="chip">IDA Pro</span>
+                        <span class="chip">Ghidra</span>
+                        <span class="chip">x64dbg</span>
+                        <span class="chip">Radare2</span>
+                        <span class="chip">Binary Ninja</span>
+                        <span class="chip">OllyDbg</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p class="sec-eye" style="margin-bottom: 0.5rem;">Fuzzing & Analysis</p>
+                    <div class="chips">
+                        <span class="chip">AFL++</span>
+                        <span class="chip">LibFuzzer</span>
+                        <span class="chip">syzkaller</span>
+                        <span class="chip">Honggfuzz</span>
+                        <span class="chip">CodeQL</span>
+                        <span class="chip">Semgrep</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="sec-eye" style="margin-bottom: 0.5rem;">Operating Systems</p>
+                    <div class="chips">
+                        <span class="chip">Linux Kernel</span>
+                        <span class="chip">Windows Internals</span>
+                        <span class="chip">macOS</span>
+                        <span class="chip">Android</span>
+                        <span class="chip">FreeBSD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Experience -->
+        <section style="margin-top: 2rem;">
+            <div class="panel glass">
+                <p class="sec-eye">Teaching</p>
+                <h2 class="sec-title">Mentorship & Teaching</h2>
+                
+                <ul class="timeline">
+                    <li class="tl-row">
+                        <div class="tl-marker"></div>
+                        <div class="tl-body">
+                            <p class="tl-role">Teaching Assistant · CS 155: Computer Security</p>
+                            <p class="tl-org">Stanford University</p>
+                        </div>
+                        <span class="tl-date">2024</span>
+                    </li>
+                    <li class="tl-row">
+                        <div class="tl-marker"></div>
+                        <div class="tl-body">
+                            <p class="tl-role">Undergraduate Research Mentor</p>
+                            <p class="tl-org">Stanford University</p>
+                            <p style="font-size: 0.8rem; color: var(--w-current);">Mentored 3 students on kernel security projects</p>
+                        </div>
+                        <span class="tl-date">2023 – Now</span>
+                    </li>
+                    <li class="tl-row">
+                        <div class="tl-marker"></div>
+                        <div class="tl-body">
+                            <p class="tl-role">Instructor · Security Workshop</p>
+                            <p class="tl-org">BUET CSE Fest</p>
+                            <p style="font-size: 0.8rem; color: var(--w-current);">Conducted workshop on binary exploitation</p>
+                        </div>
+                        <span class="tl-date">2023</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><span class="pulse-dot"></span> Khokamoni · Security Researcher</p>
+        <p>© 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
